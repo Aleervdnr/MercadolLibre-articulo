@@ -1,0 +1,27 @@
+:root{
+  --amarillo:#fff159;
+}
+
+.header{
+  height: 100px;
+  background-color: var(--amarillo);
+}
+
+.header-container{
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+}
+
+.header-container ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.header_envio{
+  display: flex;
+  flex-direction: column;
+}
+
