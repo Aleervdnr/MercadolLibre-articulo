@@ -1,17 +1,25 @@
 :root{
   --amarillo:#fff159;
+  --negro-opaco: rgba(0,0,0,.5) ;
+}
+
+ul{
+  margin: 0;
 }
 
 .header{
   height: 100px;
   background-color: var(--amarillo);
+  font-size: 14px;
+  font-family: proxima-nova, sans-serif;
 }
 
 .header-container{
+  height: 100%;
   margin: 0 auto;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-columns: .9fr 3fr 1.5fr;
 }
 
 .header-container ul{
@@ -19,9 +27,140 @@
   padding: 0;
   display: flex;
 }
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo-img{
+  height: 34px;
+}
 
 .header_envio{
   display: flex;
+  position: relative;
+  display: flex;
   flex-direction: column;
+  /* align-items: center; */
 }
 
+.envio_usuario{
+  color: var(--negro-opaco);
+  font-size: 12px;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.envio_usuario::before{
+  font-family: FontAwesome;
+  content: "\f3c5";
+  position: absolute;
+  top: 0px;
+  left: 7px;
+  font-size: 23px;
+}
+
+.envio_usuario,.envio_direccion{
+  padding-left: 30px;
+}
+
+.header_menu-list,.header_menu-nav{
+  display: flex;
+  align-items: center;
+}
+
+.header_menu-list{
+  color: var(--negro-opaco);
+}
+
+.menu-list-item,.menu-nav-item{
+  margin-right: 18px;
+  display: flex;
+  white-space: nowrap;
+  height: 40px;
+  line-height: 40px;
+}
+
+.menu-nav_icon{
+  font-size: 23px;
+  align-self: start;
+  margin-right: 3px;
+  margin-top: 3px;
+}
+
+.icon{
+  align-self: center;
+  font-size: 18px;
+}
+
+/* .chevron::after{
+  font-family: FontAwesome;
+  content:"\f078";
+  position: absolute;
+
+  font-size: 10px;
+  color: var(--negro-opaco);
+} */
+
+.chevron{
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  border-style: solid;
+  border-width: 0 1.5px 1.5px 0;
+  margin:16px 6px;
+  border-color: rgba(0, 0, 0, .3);
+}
+
+/*disney img*/
+.disney-img{
+  max-width: 340px;
+  max-height: 39px;
+}
+
+/*search*/
+.search{
+  position: relative;
+  max-width: 600px;
+  /* height: 56px; */
+  display: flex;
+  align-items: center;
+}
+
+.search_input{
+  width: 100%;
+  height: 39px;
+  border: rgba(0,0,0,.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  padding: 5px 40px 5px 15px;
+}
+
+.search_input::placeholder{
+  color: rgba(0, 0, 0, .2);
+  font-size: 16px;
+}
+
+.search_button{
+  position: absolute;
+  right: 1px;
+  width: 46px;
+  height: 39px;
+  border: rgba(0,0,0,.2);
+  background-color: white;
+  padding: 0;
+}
+
+.search_button::before{
+  content: "";
+  border: 1px solid rgba(0, 0, 0, .1);
+  position: absolute;
+  height: 26px;
+  top: 6.5px;
+  left: 0;
+}
+
+.search_button::after{
+  font-family: FontAwesome;
+  content: "\f002";
+  color: var(--negro-opaco);
+}
