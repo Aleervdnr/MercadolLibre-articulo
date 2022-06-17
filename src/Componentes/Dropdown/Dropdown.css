@@ -1,0 +1,35 @@
+.dropdown{
+  width: 260px;
+  position: absolute;
+  top: 43px;
+  left: -80px;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+
+  padding: 22px 0;
+}
+
+.dropdown::before{
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  position: absolute;
+  top: -6px;
+  left: 151px;
+  transform: rotate(45deg);
+}
+
+.dropdown_items{
+  height: 36px;
+  padding: 0 36px;
+  cursor: pointer;
+  line-height: 36px;
+}
+
+.dropdown_items:hover{
+  background-color: #3483fa;
+}

@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Header.css"
 import { BiUserCircle } from 'react-icons/bi';
-import { IoLocationOutline, IoNotificationsOutline } from 'react-icons/io5';
+import { IoNotificationsOutline } from 'react-icons/io5';
 import { BsCart2 } from 'react-icons/bs';
 import img from "../../img/disney.webp"
 import logo from "../../img/logo.png"
+import Dropdown from '../Dropdown/Dropdown';
 
 
 function Header() {
+  const [dropDown, setDropDown] = useState(false)
+
+  const onMouseEnter = () => setDropDown(true)
+  const onMouseLeave = () => setDropDown(false)
+  
   return (
     <header className='header'>
       <div className="header-container">
@@ -32,8 +38,8 @@ function Header() {
         </div>
 
         <div className="header_menu-list">
-          <ul>
-            <li className='menu-list-item'>Categorias <span className="chevron"></span></li>
+          <ul className='header_ul'>
+            <li className='menu-list-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>Categorias<span className="chevron"></span> {dropDown && <Dropdown onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}/>}</li>
             <li className='menu-list-item'>Ofertas</li>
             <li className='menu-list-item'>Historial</li>
             <li className='menu-list-item'>Supermercado</li>
@@ -44,7 +50,7 @@ function Header() {
         </div>
 
         <nav className="header_menu-nav">
-          <ul>
+          <ul className='header_ul'>
             <li className='menu-nav-item'><BiUserCircle className='menu-nav_icon'/> Usuario <span className="chevron"></span></li>
             <li className='menu-nav-item'>Mis compras</li>
             <li className='menu-nav-item'>Favoritos <span className="chevron"></span></li>

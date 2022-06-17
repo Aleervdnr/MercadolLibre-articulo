@@ -22,11 +22,6 @@ ul{
   grid-template-columns: .9fr 3fr 1.5fr;
 }
 
-.header-container ul{
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
 .logo{
   display: flex;
   align-items: center;
@@ -69,11 +64,18 @@ ul{
   align-items: center;
 }
 
+.header_ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
 .header_menu-list{
   color: var(--negro-opaco);
 }
 
 .menu-list-item,.menu-nav-item{
+  position: relative;
   margin-right: 18px;
   display: flex;
   white-space: nowrap;
