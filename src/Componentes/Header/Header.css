@@ -31,11 +31,20 @@ ul{
 }
 
 .header_envio{
+  width: fit-content;
+  height: 40px;
   display: flex;
   position: relative;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  /* align-items: center; */
+  border: 1px solid transparent;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.header_envio:hover{
+  border-color: #eadd61;
 }
 
 .envio_usuario{
@@ -50,13 +59,14 @@ ul{
   font-family: FontAwesome;
   content: "\f3c5";
   position: absolute;
-  top: 0px;
-  left: 7px;
+  top: 5px;
+  left: 8px;
   font-size: 23px;
+ 
 }
 
 .envio_usuario,.envio_direccion{
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .header_menu-list,.header_menu-nav{
@@ -81,6 +91,12 @@ ul{
   white-space: nowrap;
   height: 40px;
   line-height: 40px;
+  cursor: pointer;
+}
+
+.menu-list-item:hover{
+  color: black;
+  transition: color .3s ease-out;
 }
 
 .menu-nav_icon{

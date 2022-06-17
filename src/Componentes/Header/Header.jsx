@@ -9,11 +9,15 @@ import Dropdown from '../Dropdown/Dropdown';
 
 
 function Header() {
-  const [dropDown, setDropDown] = useState(false)
+  const [dropDownCategoria, setDropDownCategoria] = useState(false)
 
-  const onMouseEnter = () => setDropDown(true)
-  const onMouseLeave = () => setDropDown(false)
+  const onMouseEnterCategoria = () => setDropDownCategoria(true)
+  const onMouseLeaveCategoria = () => setDropDownCategoria(false)
   
+  const [dropDownUsuario, setDropDownUsuario] = useState(false)
+
+  const onMouseEnterUsuario = () => setDropDownUsuario(true)
+  const onMouseLeaveUsuario = () => setDropDownUsuario(false)
   return (
     <header className='header'>
       <div className="header-container">
@@ -34,12 +38,12 @@ function Header() {
 
         <div className="header_envio">
             <span className='envio_usuario'>Enviar a Usuario</span>
-            <span className='envio_direccion'>Calle Falsa 1312</span>
+            <span className='envio_direccion'>Calle Falsa 123</span>
         </div>
 
         <div className="header_menu-list">
           <ul className='header_ul'>
-            <li className='menu-list-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>Categorias<span className="chevron"></span> {dropDown && <Dropdown onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}/>}</li>
+            <li className='menu-list-item' onMouseEnter={onMouseEnterCategoria} onMouseLeave={onMouseLeaveCategoria}>Categorias<span className="chevron"></span> {dropDownCategoria && <Dropdown onMouseEnter={onMouseEnterCategoria} onMouseLeave={onMouseLeaveCategoria}/>}</li>
             <li className='menu-list-item'>Ofertas</li>
             <li className='menu-list-item'>Historial</li>
             <li className='menu-list-item'>Supermercado</li>
@@ -51,7 +55,9 @@ function Header() {
 
         <nav className="header_menu-nav">
           <ul className='header_ul'>
-            <li className='menu-nav-item'><BiUserCircle className='menu-nav_icon'/> Usuario <span className="chevron"></span></li>
+            <li className='menu-nav-item'  onMouseEnter={onMouseEnterUsuario} onMouseLeave={onMouseLeaveUsuario}><BiUserCircle className='menu-nav_icon'/> Usuario <span className="chevron"></span>
+            {dropDownUsuario && <Dropdown onMouseEnter={onMouseEnterUsuario} onMouseLeave={onMouseLeaveUsuario}/>}
+            </li>
             <li className='menu-nav-item'>Mis compras</li>
             <li className='menu-nav-item'>Favoritos <span className="chevron"></span></li>
             <li className='menu-nav-item'><IoNotificationsOutline className='icon'/></li>

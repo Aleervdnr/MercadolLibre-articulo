@@ -1,7 +1,7 @@
 .dropdown{
   width: 260px;
   position: absolute;
-  top: 43px;
+  top: 42px;
   left: -80px;
   display: flex;
   flex-direction: column;
