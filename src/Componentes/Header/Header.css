@@ -41,6 +41,7 @@ ul{
   border: 1px solid transparent;
   padding: 5px 8px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .header_envio:hover{
@@ -131,6 +132,11 @@ ul{
 }
 
 /*disney img*/
+
+.header_disney{
+  display: flex;
+  align-items: center;
+}
 .disney-img{
   max-width: 340px;
   max-height: 39px;

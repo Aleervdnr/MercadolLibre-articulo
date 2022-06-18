@@ -6,6 +6,7 @@ import { BsCart2 } from 'react-icons/bs';
 import img from "../../img/disney.webp"
 import logo from "../../img/logo.png"
 import Dropdown from '../Dropdown/Dropdown';
+import DropDownUsuario from '../DropDownUsuario/DropDownUsuario';
 
 
 function Header() {
@@ -43,7 +44,7 @@ function Header() {
 
         <div className="header_menu-list">
           <ul className='header_ul'>
-            <li className='menu-list-item' onMouseEnter={onMouseEnterCategoria} onMouseLeave={onMouseLeaveCategoria}>Categorias<span className="chevron"></span> {dropDownCategoria && <Dropdown onMouseEnter={onMouseEnterCategoria} onMouseLeave={onMouseLeaveCategoria}/>}</li>
+            <li className='menu-list-item' onMouseEnter={onMouseEnterCategoria} onMouseLeave={onMouseLeaveCategoria}>Categorias<span className="chevron"></span> {dropDownCategoria && <Dropdown/>}</li>
             <li className='menu-list-item'>Ofertas</li>
             <li className='menu-list-item'>Historial</li>
             <li className='menu-list-item'>Supermercado</li>
@@ -56,7 +57,7 @@ function Header() {
         <nav className="header_menu-nav">
           <ul className='header_ul'>
             <li className='menu-nav-item'  onMouseEnter={onMouseEnterUsuario} onMouseLeave={onMouseLeaveUsuario}><BiUserCircle className='menu-nav_icon'/> Usuario <span className="chevron"></span>
-            {dropDownUsuario && <Dropdown onMouseEnter={onMouseEnterUsuario} onMouseLeave={onMouseLeaveUsuario}/>}
+            {dropDownUsuario && <DropDownUsuario/>}
             </li>
             <li className='menu-nav-item'>Mis compras</li>
             <li className='menu-nav-item'>Favoritos <span className="chevron"></span></li>
