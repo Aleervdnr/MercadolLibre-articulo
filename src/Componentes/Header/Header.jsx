@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Header.css"
 import { BiUserCircle } from 'react-icons/bi';
 import { IoNotificationsOutline } from 'react-icons/io5';
 import { BsCart2 } from 'react-icons/bs';
+import {AiOutlineMenu} from "react-icons/ai"
 import img from "../../img/disney.webp"
-import logo from "../../img/logo.png"
 import Dropdown from '../Dropdown/Dropdown';
 import DropDownUsuario from '../DropDownUsuario/DropDownUsuario';
 
@@ -19,57 +19,91 @@ function Header() {
 
   const onMouseEnterUsuario = () => setDropDownUsuario(true)
   const onMouseLeaveUsuario = () => setDropDownUsuario(false)
-  return (
-    <header className='header'>
+
+  const [width, setWidth] = useState(window.innerWidth)
+
+    useEffect(()=>{
+      const setResponsive = ()=> setWidth(window.innerWidth)
+      window.addEventListener("resize", setResponsive)
+      return()=>{
+        window.removeEventListener("resize",setResponsive)
+      }
+    })
+  
+   if(width>1024){
+    return (
+      <header className='header'>
+        <div className="header-container">
+  
+          <div className="logo">
+            
+          </div>
+  
+          <form className='search'>
+            <input type="text" name="" id="" placeholder='Buscar productos, marcas y más…' className='search_input' />
+            <button className='search_button'></button>
+          </form>
+  
+          <div className="header_disney">
+            <img src={img} alt="disney start" className='disney-img'/>
+          </div>
+  
+  
+          <div className="header_envio">
+              <span className='envio_usuario'>Enviar a Usuario</span>
+              <span className='envio_direccion'>Calle Falsa 123</span>
+          </div>
+  
+          <div className="header_menu-list">
+            <ul className='header_ul'>
+              <li className='menu-list-item' onMouseEnter={onMouseEnterCategoria} onMouseLeave={onMouseLeaveCategoria}>Categorias<span className="chevron"></span> {dropDownCategoria && <Dropdown/>}</li>
+              <li className='menu-list-item'>Ofertas</li>
+              <li className='menu-list-item'>Historial</li>
+              <li className='menu-list-item'>Supermercado</li>
+              <li className='menu-list-item'>Moda</li>
+              <li className='menu-list-item'>Vender</li>
+              <li className='menu-list-item'>Ayuda</li>
+            </ul>
+          </div>
+  
+          <nav className="header_menu-nav">
+            <ul className='header_ul'>
+              <li className='menu-nav-item'  onMouseEnter={onMouseEnterUsuario} onMouseLeave={onMouseLeaveUsuario}><BiUserCircle className='menu-nav_icon'/> Usuario <span className="chevron"></span>
+              {dropDownUsuario && <DropDownUsuario/>}
+              </li>
+              <li className='menu-nav-item'>Mis compras</li>
+              <li className='menu-nav-item'>Favoritos <span className="chevron"></span></li>
+              <li className='menu-nav-item'><IoNotificationsOutline className='icon'/></li>
+              <li className='menu-nav-item'><BsCart2 className='icon'/> </li>
+            </ul>
+          </nav>
+  
+  
+        </div>
+      </header>
+    )
+   }
+
+   return(
+    <header className="header">
       <div className="header-container">
 
-        <div className="logo">
-          <img src={logo} alt="" className='logo-img'/>
-        </div>
+          <div className="logo">
 
-        <form className='search'>
-          <input type="text" name="" id="" placeholder='Buscar productos, marcas y más…' className='search_input' />
+          </div>
+
+          <form className='search'>
           <button className='search_button'></button>
-        </form>
+            <input type="text" name="" id="" placeholder='Buscar productos, marcas y más…' className='search_input' />
+          </form>
 
-        <div className="header_disney">
-          <img src={img} alt="disney start" className='disney-img'/>
-        </div>
+          <AiOutlineMenu className='icon'/>
 
-
-        <div className="header_envio">
-            <span className='envio_usuario'>Enviar a Usuario</span>
-            <span className='envio_direccion'>Calle Falsa 123</span>
-        </div>
-
-        <div className="header_menu-list">
-          <ul className='header_ul'>
-            <li className='menu-list-item' onMouseEnter={onMouseEnterCategoria} onMouseLeave={onMouseLeaveCategoria}>Categorias<span className="chevron"></span> {dropDownCategoria && <Dropdown/>}</li>
-            <li className='menu-list-item'>Ofertas</li>
-            <li className='menu-list-item'>Historial</li>
-            <li className='menu-list-item'>Supermercado</li>
-            <li className='menu-list-item'>Moda</li>
-            <li className='menu-list-item'>Vender</li>
-            <li className='menu-list-item'>Ayuda</li>
-          </ul>
-        </div>
-
-        <nav className="header_menu-nav">
-          <ul className='header_ul'>
-            <li className='menu-nav-item'  onMouseEnter={onMouseEnterUsuario} onMouseLeave={onMouseLeaveUsuario}><BiUserCircle className='menu-nav_icon'/> Usuario <span className="chevron"></span>
-            {dropDownUsuario && <DropDownUsuario/>}
-            </li>
-            <li className='menu-nav-item'>Mis compras</li>
-            <li className='menu-nav-item'>Favoritos <span className="chevron"></span></li>
-            <li className='menu-nav-item'><IoNotificationsOutline className='icon'/></li>
-            <li className='menu-nav-item'><BsCart2 className='icon'/> </li>
-          </ul>
-        </nav>
-
-
+          <BsCart2 className='icon'/>
       </div>
     </header>
-  )
+   )
+    
 }
 
 export default Header
