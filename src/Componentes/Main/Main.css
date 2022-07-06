@@ -1,0 +1,86 @@
+:root{
+  --font-color:rgba(0,0,0,.9);
+}
+*{
+  text-decoration: none;
+}
+
+a{
+  color: #3483fa;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.main{
+  max-width: 1184px;
+  margin: 0 auto ;
+  font-family: proxima-nova, sans-serif;
+  color: var(--font-color);
+}
+
+.interes{
+  margin: 16px 0 12px;
+}
+
+.interes span{
+  font-weight: 600;
+}
+
+.interes a{
+  margin: 2.5px;
+  color: var(--font-color);
+}
+
+.breadcrumb{
+  display: flex;
+  position: relative;
+  height: 16px;
+  margin-top: 24px;
+}
+
+.breadcrumb_volver{
+  margin-right: 25px;
+  color: var(--font-color);
+}
+
+.breadcrumb_volver::before{
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 110px;
+  width: 1px;
+  height: 12px;
+  background-color: rgba(0,0,0,.2);
+}
+
+.breadcrumb nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 16px;
+}
+.asd{
+  font-size: 10px;
+  margin: 0 2.5px;
+}
+
+.share{
+  align-self: end;
+  display: flex;
+  gap: 45px;
+  position: relative;
+}
+
+.share_link::after{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 89px;
+  width: 1px;
+  height: 14px;
+  background-color: rgba(0,0,0,.2);
+}
