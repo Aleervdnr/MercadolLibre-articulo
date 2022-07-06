@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MercadolLibre-articulo/static/css/main.b030fd18.css",
-    "main.js": "/MercadolLibre-articulo/static/js/main.f3bace0d.js",
+    "main.css": "/MercadolLibre-articulo/static/css/main.23358f99.css",
+    "main.js": "/MercadolLibre-articulo/static/js/main.6a4d20db.js",
     "static/media/nivel.svg": "/MercadolLibre-articulo/static/media/nivel.616f254405ffc07504d15f7c77f1f593.svg",
     "static/media/disney.webp": "/MercadolLibre-articulo/static/media/disney.d39648bd09ab98095da1.webp",
     "index.html": "/MercadolLibre-articulo/index.html",
-    "main.b030fd18.css.map": "/MercadolLibre-articulo/static/css/main.b030fd18.css.map",
-    "main.f3bace0d.js.map": "/MercadolLibre-articulo/static/js/main.f3bace0d.js.map"
+    "main.23358f99.css.map": "/MercadolLibre-articulo/static/css/main.23358f99.css.map",
+    "main.6a4d20db.js.map": "/MercadolLibre-articulo/static/js/main.6a4d20db.js.map"
   },
   "entrypoints": [
-    "static/css/main.b030fd18.css",
-    "static/js/main.f3bace0d.js"
+    "static/css/main.23358f99.css",
+    "static/js/main.6a4d20db.js"
   ]
 }
