@@ -101,6 +101,10 @@ function Header() {
 
           <BsCart2 className='icon'/>
       </div>
+      <div className="header_envio">
+        
+        <span className='envio_usuario'>Enviar a Usuario - Calle Falsa 123</span>
+      </div>
     </header>
    )
     
