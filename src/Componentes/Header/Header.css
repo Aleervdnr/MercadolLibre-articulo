@@ -54,7 +54,7 @@ ul{
   color: var(--negro-opaco);
 }
 
-@media (max-width:1023px){
+@media (max-width:1024px){
   .header{
     height: 50px;
   }
@@ -124,6 +124,7 @@ ul{
 @media (min-width:1024px){  
   .header{
     height: 100px;
+    min-width: 1184px;
   }
   .header-container{
     display: grid;

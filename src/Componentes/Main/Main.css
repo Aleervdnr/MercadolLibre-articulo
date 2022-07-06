@@ -84,3 +84,9 @@ a{
   height: 14px;
   background-color: rgba(0,0,0,.2);
 }
+
+@media screen and (max-width:1024px) {
+  .hidden{
+    display: none;
+  }
+}

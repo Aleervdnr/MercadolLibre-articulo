@@ -5,7 +5,7 @@ import {BsChevronRight} from "react-icons/bs"
 function Main() {
   return (
     <main className="main">
-      <div className="row">
+      <div className="row hidden">
         <div className="relacionado">
           <div className="interes">
             <span>También puede interesarte:</span>
