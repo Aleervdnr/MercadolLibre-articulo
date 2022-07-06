@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Main.css"
 import {BsChevronRight} from "react-icons/bs"
+import Producto from '../Producto/Producto'
 
 function Main() {
   return (
@@ -44,6 +45,8 @@ function Main() {
           <a href="#">Vender uno igual</a>
         </div>
       </div>
+
+      <Producto/>
     </main>
   )
 }
