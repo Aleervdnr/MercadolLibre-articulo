@@ -56,10 +56,9 @@ ul{
 }
 
 @media (max-width:1024px){
-  .header{
-    height: 50px;
-  }
+
   .header-container{
+    height: 50px;
     display: grid;
     grid-template-columns: 60px 5fr 55px 55px;
     justify-items: center;

@@ -26,15 +26,15 @@ function Main() {
           <div className="breadcrumb">
             <a href="#" className='breadcrumb_volver'>Volver al listado</a>
             <nav>
-              <a href="#" className="breadcrumb_link">Herramientas</a>
+              <a href="#" className="breadcrumb_link">Autos,Motos y Otros</a>
               <BsChevronRight className='asd'/>
-              <a href="#" className="breadcrumb_link">Herramientas Eléctricas</a>
+              <a href="#" className="breadcrumb_link">Motos</a>
               <BsChevronRight className='asd'/>
-              <a href="#" className="breadcrumb_link">Perforación</a>
+              <a href="#" className="breadcrumb_link">Scooters</a>
               <BsChevronRight className='asd'/>
-              <a href="#" className="breadcrumb_link">Taladros</a>
+              <a href="#" className="breadcrumb_link">Honda</a>
               <BsChevronRight className='asd'/>
-              <a href="#" className="breadcrumb_link">De Mano</a>
+              <a href="#" className="breadcrumb_link">Wave 110</a>
             </nav>
           </div>
 
