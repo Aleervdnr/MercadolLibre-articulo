@@ -16,7 +16,7 @@ a{
 }
 
 .main{
-  width: 1184px;
+  max-width: 1184px;
   margin: 0 auto ;
   font-family: proxima-nova, sans-serif;
   color: var(--font-color);
@@ -88,5 +88,11 @@ a{
 @media screen and (max-width:1024px) {
   .hidden{
     display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .main{
+    width: 1184px;
   }
 }

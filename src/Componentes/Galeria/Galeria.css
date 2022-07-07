@@ -1,7 +1,18 @@
+.galeria_display{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 @media screen and (max-width:1024px){
   .galeria_item{
     display: none;
   }
+
+  .galeria_display{
+    height: 68vh;
+  }
+
+
 }
 @media screen and (min-width:1024px){
   .galeria-container{
@@ -40,11 +51,4 @@
     height: 500px;
     margin-left: 15px;
   }
-
-  .galeria_display{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
 }
