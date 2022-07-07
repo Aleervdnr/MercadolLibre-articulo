@@ -4,6 +4,9 @@
   }
 }
 @media screen and (min-width:1024px){
+  .galeria-container{
+    display: flex;
+  }
   .galeria_item{
     height: 48px;
     width: 48px;
@@ -30,6 +33,18 @@
   
   .galeria_item:hover{
     border: 2px solid #3483fa;
+  }
+
+  .galeria-img{
+    width: 700px;
+    height: 500px;
+    margin-left: 15px;
+  }
+
+  .galeria_display{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
 }

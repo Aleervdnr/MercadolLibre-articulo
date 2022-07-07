@@ -16,7 +16,7 @@ export default function Galeria() {
         </div>
       </div>
       <div className="galeria-img">
-        <img src="" alt="" className='galeria_display' />
+        <img src={img2} alt="" className='galeria_display' />
       </div>
   </div>
   )

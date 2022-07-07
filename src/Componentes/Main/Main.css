@@ -16,7 +16,7 @@ a{
 }
 
 .main{
-  max-width: 1184px;
+  width: 1184px;
   margin: 0 auto ;
   font-family: proxima-nova, sans-serif;
   color: var(--font-color);
