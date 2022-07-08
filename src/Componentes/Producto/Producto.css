@@ -9,5 +9,57 @@
     background-color: white;
     border-radius: 3px;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 25%);
+    display: flex;
   }
+
+  .texto{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 8px;
+  }
+
+  .container-title{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title{
+    font-size: 22px;
+    width: 280px;
+    font-weight: normal;
+  }
+
+  .subtitle{
+    font-size: 14px;
+    color: rgba(0,0,0,.55)
+  }
+
+  .fav{
+    height: fit-content;
+  }
+
+  .heart-icon,.heart-icon-active{
+    font-size: 25px;
+    color: #3483fa;
+    cursor: pointer;
+  }
+
+  .verify{
+    font-size: 14px;
+    color: rgba(0,0,0,.55);
+    display: flex;
+    align-items: center;
+  }
+
+  .verify-icon{
+    color: #3483fa;
+  }
+
+  .verify span{
+    color: #3483fa;
+    margin:0 2px;
+  }
+
 }
