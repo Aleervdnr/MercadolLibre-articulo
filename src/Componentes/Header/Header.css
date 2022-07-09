@@ -55,7 +55,7 @@ ul{
   color: var(--negro-opaco);
 }
 
-@media (max-width:1024px){
+@media (max-width:1023px){
 
   .header-container{
     height: 50px;
@@ -119,9 +119,12 @@ ul{
     color: #817827;
   }
 
+  /* .disney-img,.header_ul{
+    display: none;
+  } */
 }
 
-@media (min-width:1025px){  
+@media (min-width:1024px){  
   .header{
     height: 100px;
     min-width: 1184px;

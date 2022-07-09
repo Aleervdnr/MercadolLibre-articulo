@@ -6,4 +6,5 @@
 }
 body{
   background-color:var(--fondo) ;
+  /* overflow-x: scroll; */
 }

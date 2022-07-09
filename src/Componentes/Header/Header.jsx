@@ -20,17 +20,17 @@ function Header() {
   const onMouseEnterUsuario = () => setDropDownUsuario(true)
   const onMouseLeaveUsuario = () => setDropDownUsuario(false)
 
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(window.matchMedia("(min-width: 1024px)").matches)
 
     useEffect(()=>{
-      const setResponsive = ()=> setWidth(window.innerWidth)
+      const setResponsive = ()=> setWidth(window.matchMedia("(min-width: 1024px)").matches)
       window.addEventListener("resize", setResponsive)
       return()=>{
         window.removeEventListener("resize",setResponsive)
       }
     })
   
-   if(width>1024){
+   if(width){
     return (
       <header className='header'>
         <div className="header-container">
@@ -82,31 +82,33 @@ function Header() {
         </div>
       </header>
     )
+   } else{
+     return(
+      <header className="header">
+        <div className="header-container">
+  
+            <div className="logo">
+  
+            </div>
+  
+            <form className='search'>
+            <button className='search_button'></button>
+              <input type="text" name="" id="" placeholder='Buscar productos, marcas y más…' className='search_input' />
+            </form>
+  
+            <AiOutlineMenu className='icon'/>
+  
+            <BsCart2 className='icon'/>
+        </div>
+        <div className="header_envio">
+          
+          <span className='envio_usuario'>Enviar a Usuario - Calle Falsa 123</span>
+        </div>
+      </header>
+     )
+
    }
 
-   return(
-    <header className="header">
-      <div className="header-container">
-
-          <div className="logo">
-
-          </div>
-
-          <form className='search'>
-          <button className='search_button'></button>
-            <input type="text" name="" id="" placeholder='Buscar productos, marcas y más…' className='search_input' />
-          </form>
-
-          <AiOutlineMenu className='icon'/>
-
-          <BsCart2 className='icon'/>
-      </div>
-      <div className="header_envio">
-        
-        <span className='envio_usuario'>Enviar a Usuario - Calle Falsa 123</span>
-      </div>
-    </header>
-   )
     
 }
 
