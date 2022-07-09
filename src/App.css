@@ -1,5 +1,5 @@
 :root{
-  --fondo: rgb(237,237,237);
+  --fondo: #ededed;
 }
 *{
   box-sizing: border-box;
