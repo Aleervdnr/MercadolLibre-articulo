@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/MercadolLibre-articulo/static/css/main.6ce10622.css",
-    "main.js": "/MercadolLibre-articulo/static/js/main.2e68c654.js",
+    "main.css": "/MercadolLibre-articulo/static/css/main.8b88e1a3.css",
+    "main.js": "/MercadolLibre-articulo/static/js/main.380fc150.js",
     "static/media/New-wave.jpg": "/MercadolLibre-articulo/static/media/New-wave.61525f6523ead8d4daa1.jpg",
     "static/media/honda-wave-110-s-gallery-ffffff-120180507194129.jpg": "/MercadolLibre-articulo/static/media/honda-wave-110-s-gallery-ffffff-120180507194129.e4b91ca991a50e666699.jpg",
     "static/media/nivel.svg": "/MercadolLibre-articulo/static/media/nivel.616f254405ffc07504d15f7c77f1f593.svg",
     "static/media/disney.webp": "/MercadolLibre-articulo/static/media/disney.d39648bd09ab98095da1.webp",
     "index.html": "/MercadolLibre-articulo/index.html",
-    "main.6ce10622.css.map": "/MercadolLibre-articulo/static/css/main.6ce10622.css.map",
-    "main.2e68c654.js.map": "/MercadolLibre-articulo/static/js/main.2e68c654.js.map"
+    "main.8b88e1a3.css.map": "/MercadolLibre-articulo/static/css/main.8b88e1a3.css.map",
+    "main.380fc150.js.map": "/MercadolLibre-articulo/static/js/main.380fc150.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ce10622.css",
-    "static/js/main.2e68c654.js"
+    "static/css/main.8b88e1a3.css",
+    "static/js/main.380fc150.js"
   ]
 }
