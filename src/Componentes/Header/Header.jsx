@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import "./Header.css"
 import { BiUserCircle } from 'react-icons/bi';
 import { IoNotificationsOutline } from 'react-icons/io5';
@@ -9,7 +9,7 @@ import Dropdown from '../Dropdown/Dropdown';
 import DropDownUsuario from '../DropDownUsuario/DropDownUsuario';
 
 
-function Header() {
+function Header({width}) {
   const [dropDownCategoria, setDropDownCategoria] = useState(false)
 
   const onMouseEnterCategoria = () => setDropDownCategoria(true)
@@ -20,16 +20,6 @@ function Header() {
   const onMouseEnterUsuario = () => setDropDownUsuario(true)
   const onMouseLeaveUsuario = () => setDropDownUsuario(false)
 
-  const [width, setWidth] = useState(window.matchMedia("(min-width: 1024px)").matches)
-
-    useEffect(()=>{
-      const setResponsive = ()=> setWidth(window.matchMedia("(min-width: 1024px)").matches)
-      window.addEventListener("resize", setResponsive)
-      return()=>{
-        window.removeEventListener("resize",setResponsive)
-      }
-    })
-  
    if(width){
     return (
       <header className='header'>

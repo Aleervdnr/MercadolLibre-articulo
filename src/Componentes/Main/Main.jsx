@@ -3,7 +3,7 @@ import "./Main.css"
 import {BsChevronRight} from "react-icons/bs"
 import Producto from '../Producto/Producto'
 
-function Main() {
+function Main({width}) {
   return (
     <main className="main">
       <div className="row hidden">
@@ -46,7 +46,7 @@ function Main() {
         </div>
       </div>
 
-      <Producto/>
+      <Producto width={width} />
     </main>
   )
 }

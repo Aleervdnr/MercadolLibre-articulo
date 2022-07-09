@@ -3,13 +3,15 @@
   height: 100%;
   object-fit: contain;
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1023px){
   .galeria_item{
     display: none;
   }
 
   .galeria_display{
-    height: 68vh;
+    height: 68vw;
+    object-fit: cover;
+    margin: 16px 0;
   }
 
 
