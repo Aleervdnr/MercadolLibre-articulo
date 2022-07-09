@@ -83,7 +83,7 @@ function Header({width}) {
   
             <form className='search'>
             <button className='search_button'></button>
-              <input type="text" name="" id="" placeholder='Buscar productos, marcas y más…' className='search_input' />
+              <input type="text" name="" id="" placeholder='Estoy buscando…' className='search_input' />
             </form>
   
             <AiOutlineMenu className='icon'/>
