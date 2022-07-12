@@ -26,6 +26,19 @@ export default function Producto({width}) {
               <div className="verify">
                 Vendedor con <span>identidad verificada</span> <MdVerified className='verify-icon'/>
               </div>
+
+              <div className="price">
+              <span>$</span>320.000
+            </div>
+
+            <div className="buttons-container">
+              <div className="button">Preguntar</div>
+            </div>
+
+            <div className="ayuda">
+              <span>¿Tuviste un problema con la publicación?</span>
+              <a href="#">Avisanos.</a>
+            </div>
             </div>
           </div>
       </div>

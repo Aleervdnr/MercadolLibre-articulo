@@ -32,6 +32,21 @@
   margin-right: 8px;
 }
 
+.buttons-container{
+  margin: 25px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.button{
+  background-color: #3483fa;
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  border-radius: 8px;
+}
+
 .compartir{
   display: flex;
   justify-content: center;
@@ -42,6 +57,11 @@
 .heart-icon,.heart-icon-active,.share-icon{
   font-size: 25px;
   color: #3483fa;
+}
+
+.ayuda{
+  color: rgba(0,0,0,.55);
+  font-size: 14px;
 }
 
 
@@ -56,26 +76,6 @@
   }
 
   .verify-icon{
-    font-size: 14px;
-  }
-
-  .buttons-container{
-    margin: 25px 0;
-    display: flex;
-    gap: 15px;
-  }
-
-  .button{
-    background-color: #3483fa;
-    flex: 1;
-    text-align: center;
-    padding: 12px;
-    color: white;
-    border-radius: 8px;
-  }
-
-  .ayuda{
-    color: rgba(0,0,0,.55);
     font-size: 14px;
   }
 
@@ -132,4 +132,7 @@
     color: rgba(0,0,0,.55);
   }
 
+  .price{
+    margin-top: 15px;
+  }
 }
