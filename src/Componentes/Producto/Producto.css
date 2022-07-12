@@ -11,11 +11,37 @@
 .verify{
   display: flex;
   align-items: center;
+  color: rgba(0,0,0,.55);
+}
+
+.subtitle{
+  color: rgba(0,0,0,.55);
 }
 
 .verify span{
   color: #3483fa;
   margin:0 2px;
+}
+
+.price{
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.price span{
+  margin-right: 8px;
+}
+
+.compartir{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 14px;
+  margin: 25px 0;
+}
+.heart-icon,.heart-icon-active,.share-icon{
+  font-size: 25px;
+  color: #3483fa;
 }
 
 
@@ -27,6 +53,36 @@
 
   .verify,.subtitle{
     font-size: 12px;
+  }
+
+  .verify-icon{
+    font-size: 14px;
+  }
+
+  .buttons-container{
+    margin: 25px 0;
+    display: flex;
+    gap: 15px;
+  }
+
+  .button{
+    background-color: #3483fa;
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    border-radius: 8px;
+  }
+
+  .ayuda{
+    color: rgba(0,0,0,.55);
+    font-size: 14px;
+  }
+
+  .fav,.compartir-button{
+    display: flex;
+    align-items: center;
+    color: #3483fa;
   }
 }
 @media screen and (min-width:1024px) {
@@ -68,7 +124,6 @@
 
   .heart-icon,.heart-icon-active{
     font-size: 25px;
-    color: #3483fa;
     cursor: pointer;
   }
 
@@ -76,7 +131,5 @@
     font-size: 14px;
     color: rgba(0,0,0,.55);
   }
-
-
 
 }

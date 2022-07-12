@@ -10,7 +10,6 @@ ul{
 .header{
   background-color: var(--amarillo);
   font-size: 14px;
-  font-family: proxima-nova, sans-serif;
   z-index: 10;
 }
 

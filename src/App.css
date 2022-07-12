@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
 :root{
   --fondo: #ededed;
 }
@@ -6,5 +8,6 @@
 }
 body{
   background-color:var(--fondo) ;
+  font-family: 'Nunito Sans', sans-serif;
   /* overflow-x: scroll; */
 }

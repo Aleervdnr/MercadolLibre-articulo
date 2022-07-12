@@ -21,6 +21,7 @@ function Header({width}) {
   const onMouseLeaveUsuario = () => setDropDownUsuario(false)
 
    if(width){
+    //desktop
     return (
       <header className='header'>
         <div className="header-container">
@@ -72,7 +73,8 @@ function Header({width}) {
         </div>
       </header>
     )
-   } else{
+   } else{ 
+    //Mobile
      return(
       <header className="header">
         <div className="header-container">
@@ -89,10 +91,6 @@ function Header({width}) {
             <AiOutlineMenu className='icon'/>
   
             <BsCart2 className='icon'/>
-        </div>
-        <div className="header_envio">
-          
-          <span className='envio_usuario'>Enviar a Usuario - Calle Falsa 123</span>
         </div>
       </header>
      )
